@@ -1,2 +1,3 @@
 ignore:
-  - "internal/scheduler/schedulerobjects/schedulerobjects.pb.go"
+  - "**/*.pb.go"
+  - "**/*.sql.go"
