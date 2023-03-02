@@ -1,0 +1,2 @@
+ignore:
+  - "internal/scheduler/schedulerobjects/schedulerobjects.pb.go"
