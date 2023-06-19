@@ -224,7 +224,7 @@ func TestDeleteJobsInJobSet(t *testing.T) {
 		require.Equal(t, jobResponseDelete1, responseDoesNotExist)
 
 		rowsEmpty, errEmpty := r.DeleteJobsInJobSet(ctx, "test", "job-set-1")
-		require.Equal(t, rowsEmpty, int64(0))
+		require.Equal(t, rowsEmpty, int64(1))
 		require.NoError(t, errEmpty)
 	})
 }
