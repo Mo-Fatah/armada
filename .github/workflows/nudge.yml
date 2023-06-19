@@ -2,7 +2,7 @@ name: Nudge
 
 on:
   workflow_run:
-    workflows: [Go Tests, Python Airflow Operator, Release Armada components - RC, Build Release Images, Code Coverage]
+    workflows: [Go Tests, Python Airflow Operator, Release Armada components - RC, Build Release Images, Code Coverage, "CodeQL"]
     types: [completed]
 
 
@@ -15,4 +15,3 @@ jobs:
         uses: pavlovic-ivan/octo-nudge@v1
         with:
           webhooks: ${{ secrets.NUDGE_WEBHOOKS }}
-          conclusions: 'failure,success'
