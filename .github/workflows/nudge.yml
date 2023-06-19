@@ -2,7 +2,7 @@ name: Nudge
 
 on:
   workflow_run:
-    workflows: [Go Tests, Python Airflow Operator, Release Armada components - RC]
+    workflows: [Go Tests, Python Airflow Operator, Release Armada components - RC, Build Release Images, Code Coverage]
     types: [completed]
 
 
